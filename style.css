@@ -33,7 +33,7 @@
 
 .topnav a:hover {
   /* background-color: rgb(174, 174, 174); */
-  color: rgb(77, 77, 77);
+  color: rgb(4, 173, 173);
 }
 
 .topnav a.active {
@@ -79,16 +79,16 @@ span{
 
 /* keahlian */
 .keahlian{
-  width: 80%;
+  width: 70%;
   margin: auto;
   text-align: center;
   padding-top: 50px;
 
 }
 
-.keahlian h1{
+/* .keahlian h1{
   text-align: center;
-}
+} */
 
 .baris{
   margin-top: 5%;
@@ -142,13 +142,24 @@ span{
 
 
 /* mobile */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 668px) {
+  .topnav a {
+    padding: 8px 8px;
+    font-size: 15px;
+  
+  }
   .main h1, h2{
     width: 100%;
     font-size: 30px;
-    padding-right: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
   }
   .main p{
     width: 300px;
+    padding-left: 10px;
   }
+  .baris{
+    flex-direction:column;
+  }
+  
 }
