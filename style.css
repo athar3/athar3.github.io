@@ -1,0 +1,147 @@
+*{
+  /* background-color: beige; */
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.header{
+  min-height:100vh;
+  width:100%;
+  background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7));
+  background-position:center;
+  background-size:cover;
+  position:relative;
+  color: aliceblue;
+}
+
+/* topnav */
+.topnav {
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
+
+.topnav a {
+  color: aliceblue;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: inline-block;
+
+}
+
+.topnav a:hover {
+  /* background-color: rgb(174, 174, 174); */
+  color: rgb(77, 77, 77);
+}
+
+.topnav a.active {
+  /* background-color: #04AA6D; */
+  color: rgb(0, 164, 197);
+}
+
+/* main */
+
+
+.main{
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 160px;
+}
+
+.main h1{
+    font-size: 80px;
+}
+
+.main h2{
+    font-size: 60px;
+}
+
+.main p{
+  width: 500px;
+}
+
+.main a{
+  font-size: 30px;
+  color: black;
+  padding: 6px;
+}
+
+span{
+  /* color: rgb(154, 0, 100); */
+  color: rgb(0, 164, 197);
+}
+
+/* keahlian */
+.keahlian{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+
+}
+
+.keahlian h1{
+  text-align: center;
+}
+
+.baris{
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.piton {
+  flex-basis: 31%;
+  background: #dfdfdf;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding:20px 12px;
+  box-sizing: border-box;
+  transition: 0.5s;
+
+}
+
+.piton:hover{
+  box-shadow: 0 0 20px 0 rgb(0, 0, 0,0.2);
+}
+
+
+/* footer */
+.footer{
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.footer h4{
+  margin-bottom: 25px;
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+.icons{
+  color: #000000;
+  margin: 0 13px;
+  cursor: pointer;
+  padding: 18px 0;
+}
+
+.icons a{
+  color: #000000;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: inline-block;
+}
+
+
+/* mobile */
+@media screen and (max-width: 768px) {
+  .main h1, h2{
+    width: 100%;
+    font-size: 50px;
+     /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
