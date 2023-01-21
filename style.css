@@ -111,6 +111,46 @@ span{
   box-shadow: 0 0 20px 0 rgb(0, 0, 0,0.2);
 }
 
+/* pengalaman */
+
+.exp{
+  text-align: center;
+  margin-top: 10%;
+}
+
+.barisex{
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.penglmn{
+  margin-left: 60px;
+  background: #dfdfdf;
+  border-radius: 10px;
+  width: 90%;
+  padding: 15px;
+  margin-bottom: 10px;
+}
+
+.penglmn h3{
+  float: left;
+  margin-left: 17px;
+  margin-top: 8px;
+  
+}
+
+.penglmn p{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.penglmn img{
+  float: left;
+}
+
+
 
 /* footer */
 .footer{
@@ -142,11 +182,14 @@ span{
 
 
 /* mobile */
-@media screen and (max-width: 668px) {
+@media screen and (max-width: 700px) {
   .topnav a {
     padding: 8px 8px;
-    font-size: 15px;
+    font-size: 17px;
   
+  }
+  .main{
+    margin-left: -50px;
   }
   .main h1, h2{
     width: 100%;
