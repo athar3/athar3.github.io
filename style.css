@@ -1,5 +1,4 @@
 *{
-  /* background-color: beige; */
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
@@ -150,6 +149,10 @@ span{
   float: left;
 }
 
+.hide{
+  display: none;
+}
+
 
 
 /* footer */
@@ -203,6 +206,12 @@ span{
   }
   .baris{
     flex-direction:column;
+  }
+
+  /* pengalaman */
+  .penglmn{
+    margin: auto;
+    margin-top: 15px;
   }
   
 }
