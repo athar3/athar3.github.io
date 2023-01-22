@@ -36,10 +36,10 @@
     <!-- main -->
     <section class="main">
         <div class="atas">
-            <h1>My name is Athar</h1>
+            <h1>My name is <span>Athar</span></h1>
             <h1>I like <span id="typed"></span></h1>
             <p>
-                just a normal human being that trying to find his peace
+                Just a normal human being that trying to find his peace
             </p>
         </div>
     <section>
@@ -69,23 +69,23 @@
         <section class="exp">
             <h1 id="experience">Experience</h1>
             <div class="barisex">
-                <div class="penglmn">
-                    <p>
-                        <img src="gbr/pertamina.jpg" alt="pertamina" width="50px" height="50px">
-                    </p>
+                <div class="penglmn" onclick="myFunction()">
                     <h3>PT Pertamina Hulu Rokan Zona 4 Prabumulih</h3>
+                    <div id="isipeng" class="hide">
+                        ini isiny eee
+                    </div>
                 </div>
-                <div class="penglmn">
-                    <p>
-                        <img src="gbr/pertamina.jpg" alt="pertamina" width="50px" height="50px">
-                    </p>
+                <div class="penglmn" onclick="myFunction1()">
                     <h3>PT Pertamina Hulu Rokan Zona 4 Prabumulih</h3>
+                    <div id="isipeng1" class="hide">
+                        ini isiny eee
+                    </div>
                 </div>
-                <div class="penglmn">
-                    <p>
-                        <img src="gbr/pertamina.jpg" alt="pertamina" width="50px" height="50px">
-                    </p>
+                <div class="penglmn" onclick="myFunction2()">
                     <h3>PT Pertamina Hulu Rokan Zona 4 Prabumulih</h3>
+                    <div id="isipeng2" class="hide">
+                        ini isiny eee
+                    </div>
                 </div>
             </div>
         </section>
@@ -109,7 +109,7 @@
 
 
 
-
+<!-- js -->
     <script>
         new Typed('#typed',{
       strings : ['Eating','Sleeping', 'Pooping'],
@@ -117,6 +117,31 @@
       delaySpeed : 100,
       loop : true
     });
+
+    function myFunction() {
+  var x = document.getElementById("isipeng");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+    function myFunction1() {
+  var x = document.getElementById("isipeng1");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+    function myFunction2() {
+  var x = document.getElementById("isipeng2");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
       </script> 
 
 </body>
