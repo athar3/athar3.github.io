@@ -18,7 +18,7 @@
 nav{
   position: fixed;
   background: rgba(0, 0, 0, 0.2);
-  padding: 14px 16px;
+  padding: 10px 12px;
   text-align: center;
   font-size: 17px;
   display: inline-block;
@@ -26,21 +26,23 @@ nav{
   float: none;
   margin-top: 10px;
   border-radius: 20px;
-  left: 25%;
-  right: 25%;
+  left: 30%;
+  right: 30%;
 }
 
-header{
-  background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7));
+.header {
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7));
   background-size: cover;
   width: 100%;
-  height: 660px;
+  height: 100vh; /* Set to full viewport height */
 }
-.box{
+
+.box {
   margin-top: 20px;
-  height: 1000px;
+  /* height: 1000px; Remove the fixed height */
   text-align: center;
 }
+
 
 /* nav li a:hover{
   background: red;
@@ -50,11 +52,12 @@ header{
   overflow: hidden;
   position: relative;
   text-align: center;
+  
 
 }
 
 .topnav a {
-  color: aliceblue;
+  color: rgb(0, 0, 0);
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
@@ -170,8 +173,7 @@ span{
 }
 
 .penglmn h3{
-  float: left;
-  /* margin-left: 17px; */
+  float: center;
   margin-top: 8px;
   
 }
@@ -187,6 +189,8 @@ span{
 
 .hide{
   display: none;
+  text-align: left;
+  padding: 15px;
 }
 
 
