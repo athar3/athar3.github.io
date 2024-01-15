@@ -1,153 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.8/typed.min.js"></script>
+    <title>Athar</title>
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.8/typed.min.js"></script>
+
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Athar</title>
-</head>
-<body>
-<!-- 
-    small intro
-    keahlian
-    pengalaman
-    kontak
-    hubungi
- -->
 
-    <!-- topnav -->
-    <nav>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav id="topNav">
         <div class="topnav">
             <a class="active" href="#home">Home</a>
             <a href="#skill">Skill</a>
             <a href="#experience">Experience</a>
             <a href="#contact">Contact</a>
-      
-           </ul>
         </div>
-      </nav>
+    </nav>
+
+    <!-- Header Section -->
     <header class="header">
-    
-    <!-- main -->
-    <section class="main">
-        <div class="atas">
-            <h1>My name is <span>Athar</span></h1>
-            <h1>I like <span id="typed"></span></h1>
-            <p>
-                Just a normal human being that trying to find his peace
-            </p>
-        </div>
-    <section>
+        <section class="main">
+            <div class="atas">
+                <h1>My name is <span>Athar</span></h1>
+                <h1>I like <span id="typed"></span></h1>
+                <p>
+                    Just a normal human being trying to find peace.
+                </p>
+            </div>
+        </section>
     </header>
 
-<!-- keahlian -->
-        <section class="keahlian">
-            <h1 id="skill">Skills</h1>
-            <div class="baris">
-                <div class="piton">
-                    <img src="gbr/python.png" alt="python" width="100px" height="100px">
-                    <h3>Python</h3>
-                </div>
-                <div class="piton">
-                    <img src="gbr/jupyter.png" alt="python" width="90px" height="100px">
-                    <h3>Jupyter Notebook</h3>
-                </div>
-                <!-- <div class="piton">
-                    <img src="gbr/python.png" alt="python" width="100px" height="100px">
-                    <h3>Python</h3> -->
+    <!-- Skills Section -->
+    <section class="keahlian">
+        <h1 id="skill">Skills</h1>
+        <div class="baris">
+            <div class="piton">
+                <img src="gbr/python.png" alt="python" width="100px" height="100px">
+                <h3>Python</h3>
+            </div>
+            <div class="piton">
+                <img src="gbr/jupyter.png" alt="python" width="90px" height="100px">
+                <h3>Jupyter Notebook</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="exp">
+        <h1 id="experience">Experience</h1>
+        <div class="barisex">
+            <div class="penglmn" onclick="toggleVisibility('isipeng')">
+                <h3>PT Pertamina Hulu Rokan Zona 4 Prabumulih</h3>
+                <div id="isipeng" class="hide">
+                    Doing internships in the ICT function of Pertamina Hulu Rokan Zona 4 Prabumulih. Working on projects in teams, making applications based website and provide input to the function and execution of the project which will be further developed by the company to be ready for use in support the company's operational activities.
                 </div>
             </div>
-            
-        </section>
+        </div>
+    </section>
 
-        <!-- pengalaman -->
-        <section class="exp">
-            <h1 id="experience">Experience</h1>
-            <div class="barisex">
-                <div class="penglmn" onclick="myFunction()">
-                    <h3>PT Pertamina Hulu Rokan Zona 4 Prabumulih</h3>
-                    <div id="isipeng" class="hide">
-                        ini isiny eee
-                    </div>
-                </div>
-                <div class="penglmn" onclick="myFunction1()">
-                    <h3>PT Pertamina Hulu Rokan Zona 4 Prabumulih</h3>
-                    <div id="isipeng1" class="hide">
-                        ini isiny eee
-                    </div>
-                </div>
-                <div class="penglmn" onclick="myFunction2()">
-                    <h3>PT Pertamina Hulu Rokan Zona 4 Prabumulih</h3>
-                    <div id="isipeng2" class="hide">
-                        ini isiny eee
-                    </div>
-                </div>
-            </div>
-        </section>
-            
-    
+    <!-- Contact Section -->
+    <section class="footer">
+        <h4 id="contact">Contact</h4>
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br>sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. </p>
+        <div class="icons">
+            <a href="https://www.linkedin.com/in/atharalthariq"><i class="bi bi-linkedin"></i></a>
+            <a href="https://www.instagram.com/atharalthrq"><i class="bi bi-instagram"></i></a>
+            <a href="https://github.com/athar3"><i class="bi bi-github"></i></a>
+        </div>
+        <p>Made with <i class="fa fa-heart-o"></i> by Athar </p>
+    </section>
 
-
-<!-- footer -->
-
-<section class="footer">
-    <h4 id="contact">Contact</h4>
-    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-    <div class="icons">
-        <a href="https://www.linkedin.com/in/atharalthariq"><i class="bi bi-linkedin"></i></a>
-        <a href="https://www.instagram.com/atharalthrq"><i class="bi bi-instagram"></i></a>
-        <a href="https://github.com/athar3"><i class="bi bi-github"></i></a>
-    </div>
-    <p>Made with <i class="fa fa-heart-o"></i> by Athar </p>
-</section>
-
-
-
-
-<!-- js -->
+    <!-- JavaScript -->
     <script>
-        new Typed('#typed',{
-      strings : ['Eating','Sleeping', 'Pooping'],
-      typeSpeed : 35,
-      delaySpeed : 100,
-      loop : true
-    });
+        new Typed('#typed', {
+            strings: ['Eating', 'Sleeping', 'Pooping'],
+            typeSpeed: 35,
+            delaySpeed: 100,
+            loop: true
+        });
 
-    function myFunction() {
-  var x = document.getElementById("isipeng");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-}
-    function myFunction1() {
-  var x = document.getElementById("isipeng1");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-}
-    function myFunction2() {
-  var x = document.getElementById("isipeng2");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-}
-      </script> 
+        function toggleVisibility(elementId) {
+            var content = document.getElementById(elementId);
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        }
 
+        // 
+        var topNav = document.getElementById("topNav");
+        var header = document.querySelector(".header");
+        var headerHeight = header.clientHeight;
+        var headerOffset = header.offsetTop;
+        
+        function handleScroll() {
+            var scrollPosition = window.scrollY;
+        
+            if (scrollPosition > headerOffset + headerHeight) {
+                topNav.style.display = "block";
+            } else {
+                topNav.style.display = "none";
+            }
+        }
+    
+        window.addEventListener("scroll", handleScroll);
+    
+        // Initial check to show/hide navigation based on scroll position
+        handleScroll();
+
+    </script>
 </body>
+
 </html>
