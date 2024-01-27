@@ -289,7 +289,7 @@ span{
 
 
 /* mobile */
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
   .topnav a {
     padding: 8px 8px;
     font-size: 17px;
@@ -299,7 +299,6 @@ span{
   nav{
     font-size: 8px;
     padding: 3px 4px;
-    /* margin: auto; */
     left: 6%;
     right: 6%;
   }
@@ -326,10 +325,9 @@ span{
     flex-direction:column;
   }
 
-  /* pengalaman */
   .penglmn{
     margin: auto;
     margin-top: 15px;
   }
   
-}
+} */
