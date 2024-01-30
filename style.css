@@ -564,13 +564,13 @@ top: -90px;
         margin-left: -1000px;
     }
     100% {
-        margin-left:280px;
+        margin-left:210px;
         /*margin-left:100%;  */
     }
   }
 
   .box-inner{
-    margin-top: -343px;
+    margin-top: -385px;
   }
 
   nav{
@@ -585,7 +585,7 @@ top: -90px;
   }
   .main h1{
     width: 100%;
-    font-size: 30px;
+    font-size: 50px;
     padding-right: 10px;
     padding-left: 10px;
   }
