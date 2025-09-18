@@ -1,335 +1,228 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Athar</title>
-
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-
-
-    <script src="https://code.jquery.com/jquery-3.6.4.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
-
-
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-
-    <!-- Typed.js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.8/typed.min.js"></script>
-
-    <!-- Google Fonts - Poppins -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <!-- css -->
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Athar</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
 </head>
-
 <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">Athar</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#skill">Skill</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#experience">Experience</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://drive.google.com/file/d/1jngo04z8ifFdeM0XVbvgRvacYQzbT44x/view?usp=sharing" style="color: rgb(51, 113, 123);">Resume</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Header Section -->
-    <header id="home" class="header">
-        <div id="background-wrap">
-            <div class="x1">
-                <div class="cloud"></div>
-            </div>
-        
-            <div class="x2">
-                <div class="cloud"></div>
-            </div>
-        
-            <div class="x3">
-                <div class="cloud"></div>
-            </div>
-        
-            <div class="x4">
-                <div class="cloud"></div>
-            </div>
-        
-            <div class="x5">
-                <div class="cloud"></div>
-            </div>
-        </div>
-        <div class="boat">
-            <img src="gbr\boat.png" alt="tugboat">
-        </div>
-        <section class="main text-white">
-            <div class="atas">
-                <h1 style="color: black;">The name is</h1>
-                <div class = "wave">
-                    <h1 onclick="toggleVisibility('isinama')" style="color: rgb(197, 197, 196);">Athar</h1>
-                    <h1 onclick="toggleVisibility('isinama')">Athar</h1>
-                </div>
-                <div id="isinama" class="hide">
-                    <img src="gbr/cat.png" alt="python" class="img-fluid" width="155px" height="100px">
-                </div>
-                <h2 style="color: black;">I like <span id="typed-container"><span id="typed"></span></span></h2>
-                <p style="color: black;">
-                    Just a normal human being trying to find peace.
-                </p>
-                <h5 style="color: black;">
-                    Wanna see my 
-                    <a href="https://drive.google.com/file/d/1btxBOGH1SUCdGv7XuiTpP9Tym4yQ9-GS/view?usp=sharing" class="textbox" style="text-decoration: none; color: white; font-size: inherit;">Resume</a>
-                </h5>
-                
-                <!-- <h5 style="color: black;">Wanna see my <span class="textbox" href="https://drive.google.com/file/d/1btxBOGH1SUCdGv7XuiTpP9Tym4yQ9-GS/view?usp=sharing">Resume</span></h5> -->
-
-            </div>
-<!-- https://drive.google.com/file/d/1jngo04z8ifFdeM0XVbvgRvacYQzbT44x/view?usp=sharing -->
-
-        </section>
-        <div class="box">
-            <div class="box-inner"></div>
-          </div>
-    </header>
-
-    <!-- Skills Section -->
-    <section class="keahlian py-5">
-        <div class="container">
-            <h1 id="skill" class="text-center mb-4">Skills</h1>
-            <div class="row">
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="piton text-center">
-                        <img src="gbr/python.png" alt="python" class="img-fluid" width="100px" height="100px">
-                        <!-- <h3>Python</h3> -->
-                    </div>
-                </div>
-                <!-- <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="piton text-center">
-                        <img src="gbr/jupyter.png" alt="python" class="img-fluid" width="90px" height="100px">
-                        <h3>Jupyter Notebook</h3>
-                    </div>
-                </div> -->
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="piton text-center">
-                        <img src="gbr/tf.png" alt="python" class="img-fluid" width="155px" height="100px">
-                        <!-- <h3>Tensorflow</h3> -->
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="piton text-center">
-                        <img src="gbr/js.png" alt="python" class="img-fluid" width="100px" height="100px">
-                        <!-- <h3>Javascript</h3> -->
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="piton text-center">
-                        <img src="gbr/html.png" alt="python" class="img-fluid" width="100px" height="100px">
-                        <!-- <h3>Javascript</h3> -->
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="piton text-center">
-                        <img src="gbr/pytorch.png" alt="python" class="img-fluid" width="155px" height="100px">
-                        <!-- <h3>Javascript</h3> -->
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="piton text-center">
-                        <img src="gbr/css.png" alt="python" class="img-fluid" width="70px" height="50px">
-                        <!-- <h3>Javascript</h3> -->
-                    </div>
-                </div>
-                <!-- <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="piton text-center">
-                        <img src="gbr/pytorch.png" alt="python" class="img-fluid" width="800px" height="100px">
-                        
-                    </div>
-                </div> -->
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section class="exp py-5">
-        <div class="container">
-            <h1 id="experience" class="text-center mb-4">Experiences</h1>
-            <div class="barisex">
-                <!-- peng dimulai -->
-                <div class="penglmn" onclick="toggleVisibility('isipengMachineLearningMentor')">
-                    <h3>Mentor Machine Learning</h3>
-                    <h5>Bangkit Academy led by Google, Tokopedia, Gojek, & Traveloka</h5>
-                    <h5>Feb 2024 - Jul 2043</h5>
-                    <div id="isipengMachineLearningMentor" class="hide">
-                        <ul>
-                            <li>Led 24 participants in weekly consultation sessions & monitored participant progress logbook and assignments</li>
-                            <li>Conducted two-way interactive discussions with participants</li>
-                            <li>Acted as an assistant instructor during ILT sessions.</li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- bates -->
-                <div class="penglmn" onclick="toggleVisibility('isipengIsys')">
-                    <h3>Student Researcher</h3>
-                    <h5>laboratory Intelligent System Research Group</h5>
-                    <h5>Feb 2024 - Jul 2043</h5>
-                    <div id="isipengIsys" class="hide">
-                        <ul>
-                            <li>Learning about Artificial Intelligence, especially Deep Learning in the medical field</li>
-                            <li>Working on a Final Project with Computer vision in the medical field.
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- bates -->
-                <div class="penglmn" onclick="toggleVisibility('isipengMachineLearning')">
-                    <h3>Machine Learning Cohort</h3>
-                    <h5>Bangkit Academy led by Google, Tokopedia, Gojek, & Traveloka</h5>
-                    <h5>Feb 2023 - Jul 2023</h5>
-                    <div id="isipengMachineLearning" class="hide">
-                        <ul>
-                            <li>Studying various types of Machine Learning and Deep Learning</li>
-                            <li>Utilizing Python and Javascript to develop Machine Learning and Deep Learning models</li>
-                            <li>Collaborating within a team to build an Android application that utilizes Deep Learning models for disease classification in the Bangkit 2023 Capstone Project</li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- bates -->
-                <div class="penglmn" onclick="toggleVisibility('isipengFrontEnd')">
-                    <h3>Front-end Developer</h3>
-                    <h5>PT Pertamina Hulu Rokan Zona 4 Prabumulih</h5>
-                    <h5>Dec 2022 - Jan 2023</h5>
-                    <div id="isipengFrontEnd" class="hide">
-                        <ul>
-                            <li>Developing a web-based application to monitor CCTV in Pertamina Hulu Rokan zone 4.</li>
-                            <li>Collaborating as a team to develop a web-based application for CCTV monitoring in Pertamina, aiming to streamline the process of 
-                                monitoring CCTV cameras from various brands within a single website</li>
-                            <li>Developing plans to ensure the project work efficiently</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                    <!-- bates -->
-                <div class="penglmn" onclick="toggleVisibility('isipengTekpo')">
-                    <h3>Operational Manager</h3>
-                    <h5>Technology Euphoria</h5>
-                    <h5>Apr 2022 - Nov 2022</h5>
-                    <div id="isipengTekpo" class="hide">
-                    <ul>
-                        <li>Monitoring team members to ensure they perform their respective tasks</li>
-                        <li>Responsible for the equipment used during events</li>
-                        <li>Developing plans to ensure team members work efficiently and purchases are within budget</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- <section class="Project py-5">
-
-    </section> -->
-
-<!-- lab isys -->
-<!-- bangkot -->
-<!-- tekpo -->
-
-    <!-- Contact Section -->
-    <section class="footer py-5">
-        <div class="container">
-            <h4 id="contact" class="text-center mb-4">Contact</h4>
-            <p>
-                Demikian pula <br>
-                tidak adakah orang yang mencintai atau mengejar <br> atau ingin mengalami penderitaan <br>
-                bukan semata-mata karena penderitaan itu sendiri <br>
-                tetapi karena sesekali terjadi keadaan di mana susah-payah <br> 
-                dan penderitaan dapat memberikan kepadanya kesenangan yang besar <br>
-            </p>
-            <div class="icons text-center">
-                <a href="https://www.linkedin.com/in/atharalthariq" target="_blank"><i
-                    class="bi bi-linkedin"></i></a>
-            <a href="https://www.instagram.com/atharalthrq" target="_blank"><i
-                    class="bi bi-instagram"></i></a>
-            <a href="https://github.com/athar3" target="_blank"><i class="bi bi-github"></i></a>
-        </div>
-        <p class="mt-3">Made with <i class="fa fa-heart-o"></i> by Athar </p>
+  <!-- NAV: -->
+  <header id="nav" class="nav" aria-label="Primary navigation">
+    <div class="nav-inner">
+      <a class="brand" href="#"><span class="dot" aria-hidden="true"></span> Athar</a>
+      <nav class="nav-links" aria-label="Sections">
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+        <a class="btn outline" href="https://drive.google.com/file/d/1p0ZZF__Dwsos3Q7D-FXriAYpB-XcBd0L/view?usp=sharing" rel="noopener">Resume</a>
+      </nav>
     </div>
+  </header>
+
+  <!-- <div class="clouds-wrap" aria-hidden="true">
+  <svg class="cloud cloud-1" viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg">
+    <ellipse cx="50" cy="30" rx="50" ry="30" fill="white" opacity="0.9"/>
+    <ellipse cx="120" cy="30" rx="60" ry="35" fill="white" opacity="0.9"/>
+  </svg>
+
+  <svg class="cloud cloud-2" viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg">
+    <ellipse cx="60" cy="30" rx="55" ry="28" fill="white" opacity="0.8"/>
+    <ellipse cx="130" cy="30" rx="50" ry="30" fill="white" opacity="0.8"/>
+  </svg>
+</div> -->
+
+  <!-- HERO (no navbar visible here) -->
+  <section id="home" class="hero" role="main" aria-label="Hero">
+    <div class="container hero-inner">
+      <div class="left-col">
+        <div class="kicker">Engineer • IoT Systems • Web Apps • ERP</div>
+        <h1 class="title">Hi, I'm <span class="accent">Athar</span>.</h1>
+        <p class="subtitle">
+          I build ERP-style, IoT systems, and automation that bridge field operations with business needs, eliminate repetitive manual work, enforcing process, and delivering measurable impact.
+        </p>
+
+
+
+        <div class="pills" aria-hidden="true">
+          <span class="pill">ERP • Inventory • Procurement</span>
+          <span class="pill">Automation</span>
+          <span class="pill">Workflow Digitization</span>
+          <span class="pill">SCADA & IoT Systems</span>
+          <span class="pill">VSD & Remote Control</span>
+          <span class="pill">ESP Pumps</span>
+          <span class="pill">Web Apps</span>
+          <span class="pill">Machine Learning • Computer Vision</span>
+        </div>
+
+        <!-- GANTI CV -->
+        <div class="cta">
+          <a class="btn resume" href="https://drive.google.com/file/d/1p0ZZF__Dwsos3Q7D-FXriAYpB-XcBd0L/view?usp=sharing" target="_blank">Resume</a>
+          <a class="btn" href="#contact">Get in touch</a>
+          <a class="btn outline" href="#experience">See work</a>
+          
+        </div>
+      </div>
+
+      <aside class="card-hero right-col" aria-label="What I enjoy">
+        <div class="label">What I enjoy</div>
+        <div class="enjoy-box">
+          <div id="typewriter" class="typewriter" aria-hidden="false"></div>
+        </div>
+        <div class="info">Based in Indonesia • Open to remote</div>
+      </aside>
+    </div>
+
+    <!-- Interactive waves + boat -->
+  <div class="wave-wrap">
+    <!-- Boat -->
+    <svg id="boat" class="boat" viewBox="0 0 140 100" xmlns="http://www.w3.org/2000/svg">
+      <g>
+        <rect x="30" y="52" width="80" height="20" rx="4" fill="#5e6cff"/>
+        <polygon points="20,72 120,72 110,90 30,90" fill="#2a334d"/>
+        <rect x="62" y="18" width="8" height="38" rx="2" fill="#e7eefc"/>
+        <path d="M70 18 L110 44 L70 44 Z" fill="#58d0ff"/>
+      </g>
+    </svg>
+
+    <!-- Waves -->
+    <canvas id="waves"></canvas>
+  </div>
+
+  </section>
+
+  <!-- SKILLS: background color will use the darkest wave color -->
+  <section id="skills" class="section skills-sec">
+    <div class="container">
+      <h2>Core skills</h2>
+      <div class="grid skills-grid">
+        <div class="card skill"><strong>Python</strong><div class="meter"><i style="width:85%"></i></div></div>
+        <div class="card skill"><strong>JavaScript</strong><div class="meter"><i style="width:55%"></i></div></div>
+        <div class="card skill"><strong>Laravel</strong><div class="meter"><i style="width:62%"></i></div></div>
+        <div class="card skill"><strong>Node-Red</strong><div class="meter"><i style="width:70%"></i></div></div>
+        <div class="card skill"><strong>TensorFlow / PyTorch</strong><div class="meter"><i style="width:52%"></i></div></div>
+        <div class="card skill"><strong>ERP (Inventory • P2P)</strong><div class="meter"><i style="width:55%"></i></div></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- EXPERIENCE: cards are light for contrast -->
+  <section id="experience" class="section exp-sec">
+  <div class="container">
+    <h2>Experience</h2>
+    <div class="timeline">
+      
+      <div class="xp-card">
+  <h3>IT & IoT Engineer</h3>
+  <h4>PT Western Electric Submersible Pump Indonesia (Oil & Gas)</h4>
+  <div class="meta">Prabumulih, Indonesia • Nov 2024 - Present</div>
+  <div class="xp-desc">
+
+    <h4>Process & ERP Systems</h4>
+<ul>
+  <li>Engineered ERP-style apps for inventory and BOM, exposing blind spots, killing duplicate requests, and locking procurement into full visibility.</li>
+  <li>Digitized logistics–procurement workflows, converting vague asks into enforced, cross-departmental processes tied to management priorities.</li>
+</ul>
+
+<h4>Field Digitalization</h4>
+<ul>
+  <li>Moved oil wells into SCADA-connected cloud dashboards, erasing manual reports and giving management real-time performance visibility.</li>
+  <li>Deployed remote ESP pump control with VSD integration (cloud RPM tuning + auto pressure regulation), slashing site visits and preventing expensive failures.</li>
+  <li>Built plug-and-play diagnostic kits (Raspberry Pi + Node-RED), cutting vendor lock-in, halving troubleshooting costs, and enabling even non-technical staff to run field tests.</li>
+</ul>
+
+<h4>Automation & Efficiency</h4>
+<ul>
+  <li>Killing repetitive IT operations into zero-click automation, wiping out hours of grunt work.</li>
+  <li>Converted fragile routines into self-healing systems, freeing engineers to attack high-value problems instead of babysitting processes.</li>
+</ul>
+
+<h4>Stakeholder Alignment</h4>
+<ul>
+  <li>Framed technical solutions in business terms; downtime reduced, procurement accelerated, risks neutralized and winning adoption from engineers up to executives.</li>
+  <li>Pitched and secured buy-in for system roadmaps, turning pilots into non-negotiable daily operations.</li>
+</ul>
+
+
+  </div>
+</div>
+
+
+      <div class="xp-card">
+        <h3>Machine Learning Mentor</h3>
+        <h4>Bangkit Academy (led by Google, Tokopedia, Gojek, & Traveloka)</h4>
+        <div class="meta">Remote, Indonesia • Feb 2024 - Feb 2025</div>
+        <div class="xp-desc">
+        
+          <h4>Mentorship</h4>
+          <ul>
+            <li>Mentored 50+ participants on end-to-end ML applications, from model building to deployment in cloud environments.</li>
+            <li>Facilitated consultation sessions framing projects like delivery teams: aligning business needs, structuring requirements, and driving execution.</li>
+            <li>Guided participants to design solutions addressing real-world problems with measurable impact.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="xp-card">
+        <h3>Research Student</h3>
+        <h4>Laboratorium Intelligent System Research Group</h4>
+        <div class="meta">Palembang, Indonesia • Mar 2023 - Jul 2024</div>
+        <div class="xp-desc">
+        
+          <h4>Medical AI Research</h4>
+          <ul>
+            <li>Contributed to a deep learning–based fetal heart diagnostic model using computer vision and medical image processing.</li>
+            <li>Developed medical AI models optimized for real-time inference and clinical applicability.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="xp-card">
+        <h3>Developer Intern</h3>
+        <h4> Pertamina Hulu Rokan Zona 4</h4>
+        <div class="meta">Prabumulih, Indonesia • Dec 2022 - Jan 2023</div>
+        <div class="xp-desc">
+        
+          <h4>Web Development & Monitoring Systems</h4>
+          <ul>
+            <li>Built a centralized monitoring dashboard integrating multi-brand CCTV systems, cutting supervisor response time and improving decision-making.</li>
+            <li>Conducted website testing to ensure security, reliability, and compliance with client requirements.</li>
+          </ul>
+        </div>
+      </div>
+
+      
+
+
+    </div>
+  </div>
 </section>
 
-<!-- JavaScript -->
-<!-- JavaScript -->
-<script>
-    
-    new Typed('#typed', {
-            strings: ['Eating', 'Sleeping', 'Pooping'],
-            typeSpeed: 35,
-            delaySpeed: 100,
-            loop: true
-        });
 
-        function toggleVisibility(id) {
-        var element = document.getElementById(id);
-        if (element.style.display === "block") {
-            element.style.display = "none";
-        } else {
-            element.style.display = "block";
-        }
-    }
+  <!-- CONTACT: darkest background (deep sea) -->
+  <section id="contact" class="section contact-sec">
+  <div class="container contact-inner">
+    <blockquote class="contact-quote">
+      “Systems should empower, not complicate.”
+    </blockquote>
 
-    var navbar = document.querySelector(".navbar");
-    var header = document.querySelector(".header");
-    var headerHeight = header.clientHeight;
-    var headerOffset = header.offsetTop;
+    <p class="contact-text">
+      Let's talk what matters.
+    </p>
 
-    function handleScroll() {
-        var scrollPosition = window.scrollY;
+    <div class="socials">
+      <a class="btn outline" href="https://www.linkedin.com/in/atharalthariq">LinkedIn</a>
+      <a class="btn outline" href="https://github.com/athar3">GitHub</a>
+      <a class="btn outline" href="mailto:atharalthariq03@gmail.com">Email</a>
+    </div>
 
-        if (scrollPosition > headerOffset + headerHeight) {
-            navbar.classList.add("navbar-visible");
-        } else {
-            navbar.classList.remove("navbar-visible");
-        }
-    }
-
-    window.addEventListener("scroll", handleScroll);
-
-    handleScroll(); // Initial check to show/hide navigation based on scroll position
-</script>
-
-
-<!-- Bootstrap JS and Popper.js -->
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-    integrity="sha384-Tg8nziNBH2Vl8Tz8gRUOf7Iob8Yp4+JKR9Zwe4fmeUn1IVZ9PzAt1bcdu26XiKS9" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
-    integrity="sha384-b4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+Wy3EXB/FF1KCOI0D2mtE6bVlEEL2IMqKUQ" crossorigin="anonymous"></script>
+    <div class="contact-credit">
+      © 2025 Athar • No Manual Left
+    </div>
+  </div>
+</section>
+  <script src="script.js"></script>
 </body>
-
 </html>
-
